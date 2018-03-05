@@ -5,8 +5,220 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+	<header class="main-header">
+		<h1 class="main-title"><a>DEVICE</a></h1>
+		
+		<!--Форма поиска "Поиск по сайту"-->
+		
+		<section class="main-catalog">
+			<h2>КАТАЛОГ ТОВАРОВ</h2>
+			<ul class="main-catalog-list">
+				<li><a href="#">Виртуальная реальность</a></li>       <!--нужны ли классы лишкам?-->
+				<li><a href="#">Моноподы для селфи</a></li>
+				<li><a href="#">Экшн-камеры</a></li>
+				<li><a href="#">Фитнес-браслеты</li>
+				<li><a href="#">Умные часы</li>
+				<li><a href="#">Квадрокоптеры</li>
+			</ul>
+		</section>
+		
+		<nav class="user-navigation">
+			<ul class="user-navigation-list">
+				<li class="user-inter"><a href="#">Войти</a></li>
+				<li class="compare"><a href="#">Сравнить</a></li>
+				<li class="cart"><a href="">Корзина</a></li>        <!--как реализуются доп-пункты после входа?-->
+			</ul>
+		</nav>
+		
+		<section class="header-service">
+			<h2 class="hidden-h">Сервис</h2>
+			<ul class="header-service-list">
+			<li><a href="#">Гарантия</a></li>
+			<li><a href="#">Контакты</a></li>
+			</ul>
+		</section>
+    </header>
+	
+	<main class="main-container">	
+		<section class="main-slider">
+			<section class="main-slider-01">
+				<h2><span class="hidden">Топ товар</span>01</h2>   <!--Так можно? ))))-->
+				<a class="main-slider-img" href="#">
+				<img src="#" alt="Товар номер раз" width="50" height="50">
+				</a>
+				
+				<p class="slider-text">
+					<b class="lead">Делай селфи, как Бен Стиллер!</b>
+					<span>Самая длинная палка для селфи доступна в нашем магазине.<br>
+					Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+					</span>
+					<a class="more-info" href="#">Подробнее</a>
+				</p>
+				<ul class="pagination">
+					<li class="pagination-current"></li>       <!--Вопрос реализации-->
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+				
+				<table class="main-slider-table">
+					<tr>
+						<th>8.5м</th>  <th>5кг</th>  <th>Карбон</th>
+					</tr>
+					<tr>
+						<td>Длинна палки</td>  <td>Вес палки</td>  <td>Материал</td>
+					</tr>
+				</table>
+			</section>
+			
+			<section class="main-slider-02">
+				<h2><span class="hidden">Топ товар</span>02</h2>   
+				<a class="main-slider-img" href="#">
+				<img src="#" alt="Товар номер два" width="50" height="50">
+				</a>
+				
+				<p class="slider-text">
+					<b class="lead">Худеем Правильно!</b>
+					<span>Мотивирующие фитнес-браслеты помогут найти в себе силы<br> 
+					не пропускать занятия и соблюдать диету.
+					</span>
+					<a class="btn" href="#">Подробнее</a>
+				</p>
+				<ul class="pagination">
+					<li><a class="#"></a></li>       
+					<li class="pagination-current"></li>
+					<li><a href="#"></a></li>
+				</ul>
+				
+				<table class="main-slider-table">
+					<tr>
+						<th>48 часов</th> 
+					</tr>
+					<tr>
+						<td>Без подзарядки</td> 
+					</tr>
+				</table>
+			</section>
+			
+			<section class="main-slider-03">
+				<h2><span class="hidden">Топ товар</span>03</h2>   
+				<a class="main-slider-img" href="#">
+				<img src="#" alt="Товар номер три" width="50" height="50">
+				</a>
+				
+				<p class="slider-text">
+					<b class="lead">Порхает как бабочка, жалит как пчела!</b>
+					<span>Этот обычный, на первый взгляд, квадрокоптер оснащен<br> 
+					мощным лазером, замаскированным под стандартную камеру.
+					</span>
+					<a class="more-info" href="#">Подробнее</a>
+				</p>
+				<ul class="pagination">
+					<li><a href="#"></a></li>       
+					<li><a href="#"></a></li>
+					<li class="pagination-current"></li>
+				</ul>
+				
+				<table class="main-slider-table">
+					<tr>
+						<th>800 м</th>  <th>50 м</th>
+					</tr>
+					<tr>
+						<td>Дальность полета</td>  <td>Радиус поражения</td>
+					</tr>
+				</table>
+			</section>
+		</section>
+		
+		<section class="catalog-row">
+			<h2 class="hidden-h">Каталог товаров</h2>              <!--Повтор h2 ???-->
+			<ul class="catalog-row-list">
+				<li><a href="#">Виртуальная реальность</a></li>       
+				<li><a href="#">Моноподы для селфи</a></li>
+				<li><a href="#">Экшн-камеры</a></li>
+				<li><a href="#">Фитнес-браслеты</li>
+				<li><a href="#">Умные часы</li>
+				<li><a href="#">Квадрокоптеры</li>
+			</ul>
+		</section>
+		
+		<section class="main-service">
+			<ul class="main-service-list">
+				<li class="main-service-list-current">Доставка</li>   <!--Кнопки запутался-->
+				<li><a class="btn" href="#">Гарантия</a></li>
+				<li><a class="btn" href="#">Кредит</a></li>
+			</ul>
+			<h3>Доставка</h3>									<!--Где ставить заголовок?-->
+			<p class="main-service-text">
+			Мы с удовольствием доставим ваш товар прямо к вашему
+			подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
+			поднимая его на ваш этаж.	
+			</p>
+		</section>
+		<section class="brands">
+			<h2 class="hidden-h">Производители</h2>
+			<ul class="brands-list">
+				<li><a href="#"><img src="# alt="Производитель1" width="50" height="50"></a></li>
+				<li><a href="#"><img src="# alt="Производитель2" width="50" height="50"></a></li>
+				<li><a href="#"><img src="# alt="Производитель3" width="50" height="50"></a></li>
+				<li><a href="#"><img src="# alt="Производитель4" width="50" height="50"></a></li>
+		</section>
+		
+		<section class="about-us">
+			<h2>О нас</h2>
+			<p>Огромный выбор гаджетов не оставит равнодушным гика,
+			который есть в каждом из нас.
+			</p>
+			<p>Мы можем доставить ваш товар в самые отдаленные точки России!
+			DEVICE работает со многими транспортными компаниями:
+			</p>
+			<ul class="couriers">
+				<li><a href="#">Деловые Линии</a></li>
+				<li><a href="#">Автотрейдинг</a></li>
+				<li><a href="#">ЖелДорЭкспедиция</a></li>
+			</ul>
+			<a class="btn">Подробнее о нас</a>
+		</section>
+		
+		<section class="contacts">
+			<h2>Контакты</h2>
+			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
+			работоспособность покупки. Всякое бывает.
+			</p>
+			<!--Карта-->
+			<a class="btn" href="#">Напишите нам</a>
+		</section>
+	</main>
+	
+	<footer class="main-footer">
+		<div class="footer-logo">
+			<strong>DEVICE</strong>
+			<span>г.Москва, ул. Строителей, 15</span>
+		</div>
+		
+		<section class="footer-service">
+		<h2 class="hidden-h">Сервис</h2>
+			<ul class="footer-service-list">
+				<li><a href="#">Доставка</a></li>   
+				<li><a href="#">Гарантия</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			
+			<nav class="social-navigation">
+			<ul class="social-navigation-list">
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Inst</a></li>
+				<li><a href="#">Twitter</a></li>
+			</ul>
+		</section>
+		
+		<div class="footer-end">
+			<ul class="footer-end-list">
+				<li class="user-inter"><a href="#">Войти</a></li>
+				<li class="compare"><a href="#">Сравнить</a></li>
+				<li class="cart"><a href="">Корзина</a></li>        <!--надо менять?-->
+			</ul>
+			<span>Тел.: +7 (495) 495-95-95</span>
+		</div>
+	</footer>
   </body>
 </html>
